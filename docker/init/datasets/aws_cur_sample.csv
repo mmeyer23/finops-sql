@@ -1,0 +1,17 @@
+bill_payer_account_id,product_region,line_item_product_code,line_item_usage_type,line_item_operation,line_item_resource_id,line_item_usage_start_date,line_item_usage_end_date,line_item_usage_amount,pricing_unit,line_item_unblended_cost
+111111111111,us-east-1,AmazonEC2,BoxUsage:m5.large,RunInstances,i-0a1b2c3d4e5f,2025-08-20,2025-08-21,24,Hours,3.84
+111111111111,us-east-1,AmazonEC2,EBS:VolumeUsage.gp3,CreateVolume,vol-01,2025-08-20,2025-08-21,100,GB-Mo,8.00
+111111111111,us-east-1,AmazonS3,Requests-Tier1,GetObject,s3://my-bucket,2025-08-20,2025-08-21,50000,Requests,0.20
+111111111111,us-east-1,AmazonS3,TimedStorage-ByteHrs,StandardStorage,s3://my-bucket,2025-08-20,2025-08-21,200,GB-Mo,4.00
+222222222222,us-west-2,AmazonEC2,BoxUsage:t3.medium,RunInstances,i-09f8e7d6c5b4,2025-08-21,2025-08-22,24,Hours,2.88
+222222222222,us-west-2,AmazonRDS,InstanceUsage:db.t3.medium,CreateDBInstance,db-01,2025-08-21,2025-08-22,24,Hours,4.32
+222222222222,us-west-2,AmazonCloudWatch,MetricMonitorUsage,PutMetricData,cloudwatch,2025-08-21,2025-08-22,500000,Requests,0.50
+111111111111,us-east-1,AmazonEC2,BoxUsage:m5.large,RunInstances,i-0a1b2c3d4e5f,2025-08-22,2025-08-23,24,Hours,3.84
+111111111111,us-east-1,AmazonEC2,EBS:VolumeUsage.gp3,CreateVolume,vol-01,2025-08-22,2025-08-23,100,GB-Mo,8.00
+111111111111,us-east-1,AmazonS3,TimedStorage-ByteHrs,StandardStorage,s3://my-bucket,2025-08-22,2025-08-23,210,GB-Mo,4.20
+222222222222,us-west-2,AmazonEC2,BoxUsage:t3.medium,RunInstances,i-09f8e7d6c5b4,2025-08-22,2025-08-23,24,Hours,2.88
+222222222222,us-west-2,AmazonRDS,InstanceUsage:db.t3.medium,CreateDBInstance,db-01,2025-08-22,2025-08-23,24,Hours,4.32
+222222222222,us-west-2,AmazonCloudWatch,MetricMonitorUsage,PutMetricData,cloudwatch,2025-08-22,2025-08-23,500000,Requests,0.50
+# spike day
+111111111111,us-east-1,AmazonEC2,BoxUsage:m5.2xlarge,RunInstances,i-0aaabbbccc,2025-08-25,2025-08-26,24,Hours,17.28
+111111111111,us-east-1,AmazonAthena,DataScanned,StartQueryExecution,athena,2025-08-25,2025-08-26,2000,GB,10.00

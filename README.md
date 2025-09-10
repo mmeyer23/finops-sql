@@ -50,6 +50,17 @@ SELECT * FROM aws.anomalies ORDER BY usage_day DESC;
 - Prebuilt Power BI / Superset / Metabase dashboards
 - FinOps-friendly dimensions (tags, savings plans, RI coverage)
 
+## Troubleshooting
+
+**I don’t see the views (`aws.daily_trend`, etc.)**  
+Postgres runs files in `docker-entrypoint-initdb.d` **only on first init** of the data volume. If your container initialized before the views file existed, do one of the following:
+
+- **Apply views without data loss:**
+  ```bash
+  ./scripts/apply_views.sh
+  # or: make apply-views
+
+
 ## Contributing
 
 Issues and PRs welcome! Please open an issue to discuss changes before large PRs.
